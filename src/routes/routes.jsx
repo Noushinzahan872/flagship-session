@@ -51,7 +51,7 @@ import { createBrowserRouter } from 'react-router'
        {
          path: '/',
          element: <Home />,
-        //  hydrateFallbackElement: <p>Loading, please wait....</p>,
+          hydrateFallbackElement: <p>Loading, please wait....</p>,
           loader: () => fetch('../phones.json'),
        },
        {
